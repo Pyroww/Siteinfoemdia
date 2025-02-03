@@ -1,0 +1,434 @@
+ body{
+	padding-right: .25rem;
+    padding-left: .25rem;
+    max-width: 75rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+ 
+ /* Formatação geral dos titulos de página */
+h1 {
+     border-bottom: 8px solid #fd8a24;
+     padding: 5px;
+     color: black;
+	 font-family: fonte_de_jornal;
+ }
+ 
+h2 {
+	 font-family: fonte_de_jornal;
+ }
+
+h3 {
+     border-bottom: 8px solid #fd8a24;
+     padding: 5px;
+     color: black;
+	 font-family: fonte_de_jornal;
+	 border-right: 40%;
+	 font-size: 22pt;
+ }
+ 
+ 
+ /* Formatação geral dos textos de página */
+ p {
+
+     font-family: fonte_de_jornal;
+     font-size: 20px;
+     text-align: justify;
+     color: black;
+ }
+ 
+ 
+/* Formatação geral da página SOBRE */
+.texto1 {
+	 font-family: fonte_de_jornal;
+     font-size: 17pt;
+     text-align: left;
+     color: white;
+	 margin-left: 3%;
+	 grid-area: elemento1;
+}
+
+.texto2 {
+	 font-family: fonte_de_jornal;
+     font-size: 17pt;
+     text-align: right;
+     color: black;
+	 margin-right: 3%;
+	 margin-left: 10%;
+	 grid-area: elemento2;
+}
+
+.texto3 {
+	 font-family: fonte_de_jornal;
+     font-size: 17pt;
+     text-align: left;
+     color: white;
+	 margin-left: 3%;
+	 margin-right: 5%;
+	 grid-area: elemento1;
+}
+
+#img4 {
+padding-top: 10px;
+width: 20vh;	
+height: 20vh;;	
+grid-area: elemento2;
+}
+
+#img5 {
+padding-top: 10px;
+width: 20vh;	
+height: 20vh;
+grid-area: elemento1;
+border-radius: 70%;
+margin-left: 60%;
+}
+
+#img6 {
+padding-top: 10px;
+width: 20vh;	
+height: 20vh;
+grid-area: elemento2;
+border-radius: 70%;
+padding-right: 30pt;
+}
+
+/*formatação dos hiperlinks */
+
+a {
+	color: #fd8a24;
+}
+a:link, a:visited {
+	text-decoration: none
+	
+	}
+a:hover {
+	text-decoration: none;
+	color: #fd8a24;
+	}
+a:active {
+	text-decoration: none
+	}
+
+/*sessões de cores da página */
+
+.sessao {
+            background-color: #333;
+            height: auto;
+			border-radius: 15px;
+        }
+		
+.sessao1 {
+            background-color: white;
+            height: auto;
+			border-radius: 15px;
+        }
+		
+.sessao2 {
+            background-color: #333;
+            height: auto;
+			border-radius: 15px;
+}
+	
+/* Formatação do mosaico da página "sobre" */
+div.mosaico2 {
+display: grid;
+height: 200;
+gap: 15px; 
+grid-template-areas: 
+    "elemento1 elemento2"
+}
+	
+table {
+
+	        margin-left: 10%;
+			margin-right: 10%;
+            width: 80%;
+            border-collapse: separate;
+            border: 3px double #000;
+            text-align: center;
+        }
+        th, td {
+            padding: 10px;
+            border: 3px double #000;
+        }
+ 
+.t1 {
+	margin: 0px 0px 20px
+	
+}
+
+#imgt {
+	width: 10vh;
+    height: 10vh;
+}
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+/*Formatação da pagina "contato" */
+
+section {
+            margin: 20px;
+        }
+        .contact-info {
+            margin-bottom: 30px;
+        }
+        .contact-info h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .contact-info p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .social-media {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .social-media a {
+            display: block;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        .social-media a:hover {
+            transform: scale(1.1);
+        }
+        .social-media img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+		
+ 
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+/*formatação da página principal de noticias */
+/*Formatação do mosaico de noticias */
+.mosaiconGeral {
+	padding: 12px;
+}
+
+.mosaico {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+    width: 100%;
+    margin: 0 auto 24px;
+}
+
+.mosaico .item_1 a {
+    height: 455px;
+}
+
+.mosaico .item_1 a, .mosaico .item_2 a, .mosaico .item_3 a {
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: relative;
+    text-decoration: none;
+    background-image: linear-gradient(180deg, transparent, #000);
+    border-radius: 4px;
+}
+
+.mosaico .item_1 a, .mosaico .item_2 a, .mosaico .item_3 a, .mosaico .item_1 a, .mosaico .item_2 a, .mosaico .item_3 a, .mosaico .item_1 a, .mosaico .item_2 a, .mosaico .item_3 a, .mosaico .item_1 a, .mosaico .item_2 a, .mosaico .item_3 a {
+    border-bottom: 8px solid #fd8a24;
+}
+
+.mosaico .mosaico_texto {
+    position: absolute; 
+    bottom: 0;
+    margin-left: 24px;
+}
+
+.mosaico .item_1 {
+    height: 200px;
+    margin-bottom: 16px;
+}
+
+.mosaico .item_3 {
+    height: 200px;
+    margin-bottom: 16px;
+}
+
+
+div.mosaico {
+display: grid;
+height: 200;
+gap: 15px; 
+grid-template-areas: 
+    "item2 item1"
+    "item2 item3"
+}
+
+div.item_3 {
+
+    height: 150px;
+    grid-area: item3;
+}
+
+div.item_2 {
+    height: 430px;
+    grid-area: item2;
+}
+
+div.item_1 {
+    height: 150px;
+    grid-area: item1;
+	
+}
+
+#img3{
+	height: 200px;
+}
+
+.mosaico .item_1 img, .mosaico .item_2 img, .mosaico .item_3 img {
+    width: 100%;
+    position: absolute;
+    z-index: -9;
+    border-radius: 4px 4px 0 0;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border-radius: 4px;
+}
+
+.mosaico .mosaico_texto p {
+    margin-bottom: 8px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    width: fit-content;
+    color: #fff;
+
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.43;
+    word-break: break-word;
+}
+
+.mosaico .mosaico_texto p {
+    border: 2px solid #fd8a24;
+    background-color: #333;
+}
+
+.mosaico .mosaico_texto h2 {
+    color: #fff;
+    padding: 0 24px 0 0;
+    margin-bottom: 24px;
+    text-shadow: 1px 2px 1px rgba(0, 0, 0, .16);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.33;
+    text-align: left;
+    word-break: break-word;
+}
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+/*Responsividade */
+@media (max-width: 768px) {
+	
+
+	
+    div.mosaico {
+display: grid;
+height: 200;
+gap: 15px; 
+grid-template-areas: 
+    "item2"
+    "item1"
+	"item3"
+}
+
+.mosaico .mosaico_texto p {
+	   font-size: 10px;
+   }
+   
+.mosaico .mosaico_texto h2 {
+	font-size: 17px;
+}
+
+h1 {
+	font-size: 15pt;
+}
+
+div.mosaico2 {
+grid-template-areas: 
+    "elemento1"
+	"elemento2"
+}
+
+.texto1 {
+     font-size: 13pt;
+     text-align: justify;
+	 margin-right: 3%;
+}
+
+.texto2 {
+     font-size: 13pt;
+     text-align: justify;
+	 margin-left: 3%;
+}
+
+.texto3 {
+     font-size: 13pt;
+     text-align: justify;
+	 margin-right: 3%;
+}
+
+#img4 {
+  margin: auto;
+  display: block;
+  padding: 10px;
+  width: 20vh;
+}
+
+#img5 {
+  margin: auto;
+  display: block;
+  padding: 10px;
+  width: 20vh;
+}
+
+#img6 {
+  margin: auto;
+  display: block;
+  padding: 10px;
+  width: 20vh;
+}
+
+
+table {
+	
+	
+            width: 90%;
+		    margin-left: 5%;
+			margin-right: 0%;
+			border: 0px double #000;
+			
+            }
+			
+            th {
+                display: block;
+                text-align: center;
+    
+				
+            }
+            td {
+				
+                display: none;
+                justify-content: none;
+                align-items: none;
+                margin-bottom: none;
+
+            }
+
+
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+/*CSS feito no bloco de notas do windows
+André Lucas Soares da Silva de Sá */
